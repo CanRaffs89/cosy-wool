@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Raleway');
+
+body {
+    margin: 0;
+    padding: 0;
+    transition: .5s;
+    font-family: 'Raleway', sans-serif;
+}    
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .wrapper {
+      width: auto;
+  }
+
+/* Navigation */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 100px;
+    transition: .5s;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+nav.white {
+    background: #fff;
+    opacity: 0.8;
+    padding: 10px 100px;
+}
+
+nav .logo a{
+    position: fixed;
+    padding: 15px 20px 20px 20px;
+    height: 80px;
+    float: left;
+    font-size: 1.75rem;
+    transition: .3s;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Pacifico', cursive;
+    box-sizing: border-box;
+}
+
+nav.white .logo a {
+    color: #000;
+}
+
+nav ul {
+    list-style: none;
+    overflow: hidden;
+    float: right;
+    margin: 0;
+    padding: 0;
+    transition: .3s;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul li a {
+    line-height: 80px;
+    padding: 12px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s;
+    color: #fff;
+}
+
+nav.white ul li a {
+    color: #000;
+}
+
+nav.white ul li a.active {
+    border-bottom: solid 1px #000;
+}
+
+nav ul li a:hover {
+    opacity: 0;
+}
+
+.menu-icon {
+    width: 100%;
+    background: #fff;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #000;
+    display: none;
+}
+
+/* Showcase Image */
+.showcase {
+    width: 100%;
+    height: 100vh;
+    background: url('/dist/img/blue-yarn.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.showcase-inner {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 5em;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.showcase-inner h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+}
+
+/* Content */
+.content {
+    margin: 100px auto 80px auto;
+    max-width: 80%;
+    display: flex;
+}
+
+#second-section {
+    margin: 80px auto 20px auto;
+}
+
+.content h1 {
+    font-size: 1.5rem;
+    color: rgb(124, 157, 176);
+}
+
+.content p {
+    line-height: 1.7rem;
+    color: rgb(96, 96, 96);
+}
+
+.content-item {
+    width: 50%;
+    margin: 20px;
+}
+
+.content-item-text {
+    width: 70%;
+    margin: 0 auto;
+}
+
+#first-section-image {
+    background: url('/dist/img/jumper-lights.jpg') no-repeat center/cover;
+}
+
+#second-section-image {
+    background: url('/dist/img/jumper-pile.jpg') no-repeat center/cover;
+}
+
+/* Image Grid */
+.image-grid {
+    margin: 10px auto;
+    max-width: 90%;
+    height: auto;
+    display: flex;
+}
+
+.image-grid-item {
+    width: 33%;
+    height: 260px;
+    margin: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-grid-image {
+    width: 100%;
+    height: 100%;
+}
+
+#image-grid-1 {
+    background: url('/dist/img/yarn-bowl.jpg') no-repeat center/cover;
+}
+
+#image-grid-2 {
+    background: url('/dist/img/yarn-balls.jpg') no-repeat center/cover;
+}
+
+#image-grid-3 {
+    background: url('/dist/img/crochet_ball.jpg') no-repeat center/cover;
+}
+
+.image-grid-item a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    position: absolute;
+    color: #fff;
+    padding: 15px 20px;
+}
+
+.image-grid-item a:hover {
+    background: rgba(0, 0, 0, 0.2);
+    font-size: 1.6rem;
+    transition: .5s;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: rgb(96, 96, 96);
+}
+
+/* Media Queries */
+@media (max-width: 900px) {
+    /* Navigation */
+    nav .logo {
+        max-width: 120px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    nav .logo a {
+        position: fixed;
+        top: 0;
+        padding: 0;
+        padding-top: 10px;
+        color: #000;
+        height: auto;
+        font-size: 24px;
+    }
+
+    nav {
+        padding: 0;
+    }
+
+    nav.white {
+        padding: 0;
+        height: auto;
+        opacity: 1;
+    }
+
+    nav ul {
+        max-height: 0px;
+        background: #fff;
+        float: none;
+    }
+
+    .show-icon {
+        max-height: 30em;
+    }
+
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        color: #000;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    /* Showcase */
+    .showcase-inner {
+        position: absolute;
+        width: 100%;
+        margin: 0 auto;
+        top: 35%;
+        left: 0;
+        padding: 2em;
+        box-sizing: border-box;
+    }
+
+    /* Content */
+    .content {
+        flex-direction: column;
+        margin: 50px auto;
+        max-width: 90%;
+    }
+
+    .content-item {
+       width: auto;
+       margin: 0;
+    }
+
+    .content-item-text {
+        width: 100%;
+    }
+
+    #first-section-image, #second-section-image {
+        height: 300px;
+        width: auto;
+    }
+
+    /* Image Grid */
+    .image-grid {
+        flex-direction: column;
+    }
+
+    .image-grid-item {
+        width: 100%;
+        height: 130px;
+        margin: 0 auto;
+    }
+
+    /* Footer */
+    footer {
+        height: 50px;
+    }
+}
+
