@@ -307,9 +307,25 @@ footer {
         width: 100%;
     }
 
+    #first-para {
+        margin-bottom: 40px;
+    }
+
     #first-section-image, #second-section-image {
         height: 300px;
         width: auto;
+    }
+
+    #first-section {
+        margin-top: 30px;
+    }
+
+    #second-section {
+        margin: 50px auto 20px auto;
+    }
+
+    #second-heading {
+        margin-top: 45px;
     }
 
     /* Image Grid */
