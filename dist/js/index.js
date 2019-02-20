@@ -1,3 +1,4 @@
+// Change navbar opacity on scroll
 $(window).on('scroll', function() {
     if($(window).scrollTop()) {
         $('nav').addClass('white');
@@ -6,6 +7,7 @@ $(window).on('scroll', function() {
     }
 });
 
+// Mobile menu button
 $(document).ready(function() {
     $('.menu-icon').on('click', function() {
         $('nav ul').toggleClass('show-icon');
