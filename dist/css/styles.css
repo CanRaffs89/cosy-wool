@@ -340,14 +340,6 @@ footer {
         height: 130px;
         margin: 0 auto;
     }
-    
-    #image-grid-2 {
-        background: url('/dist/img/yarn-balls-sm.jpg') no-repeat center/cover;
-    }
-    
-    #image-grid-3 {
-        background: url('/dist/img/crochet-ball-sm.jpg') no-repeat center/cover;
-    }
 
     /* Footer */
     footer {
